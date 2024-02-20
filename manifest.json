@@ -1,3 +1,13 @@
 {
-    
+  "version": "0.0.1",
+  "name": "kulp-plugin",
+  "descripton": "A plugin for Kulp",
+  "pm": "npm",
+  "access": "public",
+  "components": [
+    {
+      "name": "hello-kulp",
+      "descripton": "A simple hello world component"
+    }
+  ]
 }
