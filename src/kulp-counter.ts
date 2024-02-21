@@ -1,7 +1,7 @@
 import { LitElement, html } from "lit";
 import { customElement, property } from "lit/decorators.js";
 
-@customElement("kulp-counter")
+@customElement("kulp-plugin.kulp-counter")
 export class KulpCounter extends LitElement {
     @property({ type: Number }) count = 0;
 
