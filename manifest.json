@@ -1,12 +1,14 @@
 {
   "version": "0.0.1",
   "name": "kulp-plugin",
+  "title": "Kulp Plugin",
   "description": "A plugin for Kulp",
   "pm": "npm",
   "access": "public",
   "components": [
     {
       "name": "kulp-plugin.hello-kulp",
+      "title": "Hello Kulp",
       "description": "A simple hello world component"
     }
   ]
