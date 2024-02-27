@@ -10,5 +10,8 @@ export default defineConfig({
                 entryFileNames: 'assets/index.js',
             }
         }
+    },
+    preview: {
+        cors: false
     }
 });
