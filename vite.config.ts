@@ -1,4 +1,3 @@
-// vite.config.js
 import { defineConfig } from 'vite';
 
 export default defineConfig({
@@ -6,12 +5,22 @@ export default defineConfig({
         rollupOptions: {
             output: {
                 dir: 'dist',
-                // output file name as index.js
                 entryFileNames: 'assets/index.js',
             }
         }
     },
+    server: {
+        cors: {
+            origin: '*', // Allow all origins
+            methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Specify allowed methods
+            allowedHeaders: ['Content-Type', 'Authorization'], // Specify allowed headers
+        },
+    },
     preview: {
-        cors: false
-    }
+        cors: {
+            origin: '*', // Allow all origins
+            methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Specify allowed methods
+            allowedHeaders: ['Content-Type', 'Authorization'], // Specify allowed headers
+        },
+    },
 });
