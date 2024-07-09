@@ -1,9 +1,8 @@
-import { LitElement, html } from "lit";
-import { customElement, property } from "lit/decorators.js";
+import { KulpElement, html, css, register, prop } from "kulp-kit";
 
-@customElement("kulp-plugin.kulp-counter")
-export class KulpCounter extends LitElement {
-    @property({ type: Number }) count = 0;
+@register("kulp-plugin.kulp-counter")
+export class KulpCounter extends KulpElement {
+    @prop({ type: Number }) count = 0;
 
     increment() {
         this.count++;
