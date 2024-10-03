@@ -2,6 +2,11 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
     build: {
+        lib: {
+            entry: 'index.ts',
+            name: 'plugin',
+            formats: ['es']
+        },
         rollupOptions: {
             output: {
                 dir: 'dist',

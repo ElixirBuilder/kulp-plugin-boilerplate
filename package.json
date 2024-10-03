@@ -10,7 +10,7 @@
     "serve": "concurrently \"vite preview\" \"vite build --watch\""
   },
   "dependencies": {
-    "kulp-kit": "^0.0.11",
+    "kulp-kit": "^0.0.21",
     "lit": "^3.1.2"
   },
   "devDependencies": {
